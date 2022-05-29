@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551D9C9528415EB000BB41F6 /* GroupsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9428415EB000BB41F6 /* GroupsModel.swift */; };
+		551D9C9728415EF700BB41F6 /* CellGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9628415EF700BB41F6 /* CellGroups.swift */; };
+		551D9C9928415FA900BB41F6 /* TemporaryFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9828415FA900BB41F6 /* TemporaryFiles.swift */; };
+		551D9C9B284160C100BB41F6 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9A284160C100BB41F6 /* GroupsView.swift */; };
+		551D9C9D2841678800BB41F6 /* FriendGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */; };
+		55C06FD8283EA6EE00E90816 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD7283EA6EE00E90816 /* LoginView.swift */; };
+		55C06FDA283EAA8600E90816 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD9283EAA8600E90816 /* StartView.swift */; };
+		55C06FDC283EB13C00E90816 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FDB283EB13C00E90816 /* FriendsView.swift */; };
+		55C06FDF283EB20E00E90816 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FDE283EB20E00E90816 /* FriendsModel.swift */; };
+		55C06FE2283EB2F100E90816 /* CellFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FE1283EB2F100E90816 /* CellFriend.swift */; };
 		55F86780283EA3E7007C5D8F /* VKSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8677F283EA3E7007C5D8F /* VKSwiftUIApp.swift */; };
 		55F86782283EA3E7007C5D8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F86781283EA3E7007C5D8F /* ContentView.swift */; };
 		55F86784283EA3E8007C5D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F86783283EA3E8007C5D8F /* Assets.xcassets */; };
@@ -16,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551D9C9428415EB000BB41F6 /* GroupsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsModel.swift; sourceTree = "<group>"; };
+		551D9C9628415EF700BB41F6 /* CellGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellGroups.swift; sourceTree = "<group>"; };
+		551D9C9828415FA900BB41F6 /* TemporaryFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFiles.swift; sourceTree = "<group>"; };
+		551D9C9A284160C100BB41F6 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendGalleryView.swift; sourceTree = "<group>"; };
+		55C06FD7283EA6EE00E90816 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		55C06FD9283EAA8600E90816 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		55C06FDB283EB13C00E90816 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		55C06FDE283EB20E00E90816 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		55C06FE1283EB2F100E90816 /* CellFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFriend.swift; sourceTree = "<group>"; };
 		55F8677C283EA3E7007C5D8F /* VKSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F8677F283EA3E7007C5D8F /* VKSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKSwiftUIApp.swift; sourceTree = "<group>"; };
 		55F86781283EA3E7007C5D8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +56,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55C06FD6283EA6D800E90816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55C06FE0283EB2D900E90816 /* Cell */,
+				55C06FD7283EA6EE00E90816 /* LoginView.swift */,
+				55C06FD9283EAA8600E90816 /* StartView.swift */,
+				55C06FDB283EB13C00E90816 /* FriendsView.swift */,
+				551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */,
+				551D9C9A284160C100BB41F6 /* GroupsView.swift */,
+				551D9C9828415FA900BB41F6 /* TemporaryFiles.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55C06FDD283EB1FB00E90816 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55C06FDE283EB20E00E90816 /* FriendsModel.swift */,
+				551D9C9428415EB000BB41F6 /* GroupsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55C06FE0283EB2D900E90816 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55C06FE1283EB2F100E90816 /* CellFriend.swift */,
+				551D9C9628415EF700BB41F6 /* CellGroups.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		55F86773283EA3E7007C5D8F = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +109,8 @@
 			children = (
 				55F8677F283EA3E7007C5D8F /* VKSwiftUIApp.swift */,
 				55F86781283EA3E7007C5D8F /* ContentView.swift */,
+				55C06FDD283EB1FB00E90816 /* Models */,
+				55C06FD6283EA6D800E90816 /* View */,
 				55F86783283EA3E8007C5D8F /* Assets.xcassets */,
 				55F86788283EA3E8007C5D8F /* Persistence.swift */,
 				55F8678A283EA3E8007C5D8F /* VKSwiftUI.xcdatamodeld */,
@@ -143,9 +197,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C06FDC283EB13C00E90816 /* FriendsView.swift in Sources */,
+				551D9C9B284160C100BB41F6 /* GroupsView.swift in Sources */,
+				55C06FDF283EB20E00E90816 /* FriendsModel.swift in Sources */,
 				55F86789283EA3E8007C5D8F /* Persistence.swift in Sources */,
+				551D9C9D2841678800BB41F6 /* FriendGalleryView.swift in Sources */,
+				551D9C9728415EF700BB41F6 /* CellGroups.swift in Sources */,
+				551D9C9528415EB000BB41F6 /* GroupsModel.swift in Sources */,
+				55C06FD8283EA6EE00E90816 /* LoginView.swift in Sources */,
 				55F86782283EA3E7007C5D8F /* ContentView.swift in Sources */,
+				55C06FDA283EAA8600E90816 /* StartView.swift in Sources */,
 				55F8678C283EA3E8007C5D8F /* VKSwiftUI.xcdatamodeld in Sources */,
+				551D9C9928415FA900BB41F6 /* TemporaryFiles.swift in Sources */,
+				55C06FE2283EB2F100E90816 /* CellFriend.swift in Sources */,
 				55F86780283EA3E7007C5D8F /* VKSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
