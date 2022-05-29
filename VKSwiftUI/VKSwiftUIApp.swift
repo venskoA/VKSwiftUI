@@ -13,7 +13,7 @@ struct VKSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            StartView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
