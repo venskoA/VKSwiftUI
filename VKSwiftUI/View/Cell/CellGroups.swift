@@ -17,9 +17,7 @@ struct CellGroups: View {
                     .frame(width: 1)
                 Image(groups.avatar ?? "pencil.slash")
                     .resizable()
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(25)
-                    .shadow(color: .mint, radius: 10, x: 3, y: 2)
+                    .modifier(ImageRadiusModifare())
 
                 Spacer()
                     .frame(width: 20)

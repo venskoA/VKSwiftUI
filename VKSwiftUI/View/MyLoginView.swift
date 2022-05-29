@@ -10,7 +10,7 @@ import SwiftUI
 import CoreData
 import Combine
 
-struct LoginView: View {
+struct MyLoginView: View {
     private let loginDef = ""
     private let passwordDef = ""
 
@@ -28,9 +28,7 @@ struct LoginView: View {
     ).removeDuplicates()
 
     var body: some View {
-
         ZStack {
-
             GeometryReader { geometry in
                 Image("111")
                     .resizable()
@@ -115,7 +113,7 @@ extension UIApplication {
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LoginView()
+            MyLoginView()
                 .previewDevice("iPhone 13")
         }
     }

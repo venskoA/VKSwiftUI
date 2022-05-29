@@ -8,21 +8,19 @@
 import SwiftUI
 
 struct GroupsView: View {
-
+    
     let testGroups = TestCastomGroups().groups
-
+    
     var body: some View {
-        NavigationView {
-            VStack{
-                List(testGroups) { group in
-                    NavigationLink {
-                        
-                    } label: {
-                        CellGroups(groups: group)
-                    }
-                    .navigationTitle("Groups")
-                    .navigationBarTitleDisplayMode(.inline)
+        VStack{
+            List(testGroups) { group in
+                NavigationLink {
+                    
+                } label: {
+                    CellGroups(groups: group)
                 }
+                .navigationTitle("Groups")
+                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }

@@ -29,7 +29,7 @@
 		554CF81F2842738400703DDE /* FriendsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF81E2842738400703DDE /* FriendsApiService.swift */; };
 		554CF8212842743100703DDE /* FriendsSericeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8202842743000703DDE /* FriendsSericeManager.swift */; };
 		554CF8232842748500703DDE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8222842748500703DDE /* ImageLoader.swift */; };
-		554CF8262842A1C600703DDE /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8252842A1C500703DDE /* PhotoUser.swift */; };
+		554CF8262842A1C600703DDE /* PhotoUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8252842A1C500703DDE /* PhotoUserModel.swift */; };
 		554CF8282842A22B00703DDE /* GalleryApiServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8272842A22B00703DDE /* GalleryApiServiceManager.swift */; };
 		55C06FD8283EA6EE00E90816 /* MyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD7283EA6EE00E90816 /* MyLoginView.swift */; };
 		55C06FDA283EAA8600E90816 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD9283EAA8600E90816 /* StartView.swift */; };
@@ -66,7 +66,7 @@
 		554CF8202842743000703DDE /* FriendsSericeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSericeManager.swift; sourceTree = "<group>"; };
 		554CF8222842748500703DDE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		554CF824284287F800703DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		554CF8252842A1C500703DDE /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
+		554CF8252842A1C500703DDE /* PhotoUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUserModel.swift; sourceTree = "<group>"; };
 		554CF8272842A22B00703DDE /* GalleryApiServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApiServiceManager.swift; sourceTree = "<group>"; };
 		55C06FD7283EA6EE00E90816 /* MyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoginView.swift; sourceTree = "<group>"; };
 		55C06FD9283EAA8600E90816 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				55C06FDE283EB20E00E90816 /* FriendsModel.swift */,
 				551D9C9428415EB000BB41F6 /* GroupsModel.swift */,
 				554CF80528424B2800703DDE /* OutputNewsModel.swift */,
-				554CF8252842A1C500703DDE /* PhotoUser.swift */,
+				554CF8252842A1C500703DDE /* PhotoUserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 				551D9C9928415FA900BB41F6 /* TemporaryFiles.swift in Sources */,
 				55C06FE2283EB2F100E90816 /* CellFriend.swift in Sources */,
 				55F86780283EA3E7007C5D8F /* VKSwiftUIApp.swift in Sources */,
-				554CF8262842A1C600703DDE /* PhotoUser.swift in Sources */,
+				554CF8262842A1C600703DDE /* PhotoUserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
