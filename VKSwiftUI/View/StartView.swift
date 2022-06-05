@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct StartView: View {
-    @State private var numberScreen: Int = 2
+    @State private var numberScreen: Int = 0
     @State private var isLoggedIn = false
+    @State var loadWebController: Bool = false
 
     var body: some View {
-        if isLoggedIn {
+        if loadWebController {
             TabView(selection: $numberScreen) {
                 NavigationView {
                     FriendsView()
@@ -43,12 +44,7 @@ struct StartView: View {
             }
         } else {
             VStack {
-                LoginView()
-                Button {
-                    isLoggedIn = true
-                } label: {
-                    Text("Start")
-                }
+                LoginView(load: $loadWebController)
             }
         }
     }

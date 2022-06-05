@@ -35,7 +35,9 @@ struct CellFriend: View {
                     .resizable()
                     .modifier(ImageRadiusModifare())
                     .scaleEffect(animation ? 5 : 1)
-                    .animation(.spring(), value: animation)
+                    .animation(.spring()
+                                .repeatCount(5, autoreverses: true),
+                               value: animation)
                     .transformEffect(.init(translationX: animation ? transf.openX : transf.standart,
                                            y: animation ? transf.openY : transf.standart))
                     .onTapGesture {
