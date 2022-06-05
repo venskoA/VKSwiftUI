@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct FriendsView: View {
-    
-    let friendsService = FriendsServiceManager()
-    
+        
     @ObservedObject var loadFriend: ProcessingLoadFrieds = .init()
     
     var body: some View {

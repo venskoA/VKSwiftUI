@@ -27,15 +27,15 @@ class ProcessingLoadFrieds: ObservableObject {
         }
     }
 
-    func simpleFactory(_ inputData: FriendItems, complition: @escaping (FriendsModel) -> ()) {
-        friendsService.loadImage(url: inputData.photo200orig) { image in
-            let id = inputData.id
-            let avatar = image
-            let firstName = inputData.firstName
-            let secondName = inputData.lastName
-            let friend = FriendsModel(id: UUID(), myId: id, firstName: firstName, secondName: secondName, birthday: " ", avatar: avatar, fotoArray: [" "])
-            complition(friend)
-        }
-    }
+//    func simpleFactory(_ inputData: FriendItems, complition: @escaping (FriendsModel) -> ()) {
+//        friendsService.loadImage(url: inputData.photo200orig) { image in
+//            let id = inputData.id
+//            let avatar = image
+//            let firstName = inputData.firstName
+//            let secondName = inputData.lastName
+//            let friend = FriendsModel(id: UUID(), myId: id, firstName: firstName, secondName: secondName, birthday: " ", avatar: avatar, fotoArray: [" "])
+//            complition(friend)
+//        }
+//    }
 }
 

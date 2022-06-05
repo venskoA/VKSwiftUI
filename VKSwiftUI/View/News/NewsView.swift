@@ -12,14 +12,10 @@ struct NewsView: View {
     
     var body: some View {
         ZStack{
-            List(testNews) { news in
-                NavigationLink {
-                    
-                } label: {
-                    CellNews(news: news)
-                }
-                .navigationTitle("News")
-                .navigationBarTitleDisplayMode(.inline)
+            List(testNews) { news in                    
+                CellNews(news: news)
+                    .navigationTitle("News")
+                    .navigationBarTitleDisplayMode(.inline)
             }
         }
     }

@@ -23,6 +23,7 @@ struct Cell: Identifiable {
 //        var date: String
     var manualNews: String?
     var likes: Int?
+    var tabLikes: Bool
     var comments: Int?
     var reply: Int?
     var browsing: Int?

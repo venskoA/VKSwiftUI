@@ -17,8 +17,11 @@ struct ButtonInNewBuilder: View {
 
     var body: some View {
         content
-            .padding(10)
+            .font(.system(size: 12))
+            .padding(5)
             .background(.blue)
             .cornerRadius(30)
+            .lineLimit(1)
+            .buttonStyle(.borderedProminent)
     }
 }

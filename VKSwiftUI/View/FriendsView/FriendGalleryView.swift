@@ -20,7 +20,7 @@ struct FriendGalleryView: View {
                 HStack {
                     Spacer()
                         .frame(width: 25)
-                    Image(uiImage: friend.avatar ?? UIImage())
+                    Image(uiImage: friend.avatar)
                         .resizable()
                         .frame(width: 100, height: 100, alignment: .center)
                         .cornerRadius(50, antialiased: true)
@@ -40,7 +40,7 @@ struct FriendGalleryView: View {
                         }
                     }
                     .padding()
-                }
+                }.animation(.easeIn(duration: 10) , value: true  )
             }
         }
     }

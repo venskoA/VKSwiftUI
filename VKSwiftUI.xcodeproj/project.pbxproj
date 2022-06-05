@@ -31,6 +31,7 @@
 		554CF8232842748500703DDE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8222842748500703DDE /* ImageLoader.swift */; };
 		554CF8262842A1C600703DDE /* PhotoUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8252842A1C500703DDE /* PhotoUserModel.swift */; };
 		554CF8282842A22B00703DDE /* GalleryApiServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CF8272842A22B00703DDE /* GalleryApiServiceManager.swift */; };
+		556F5C0A284CAE6700446F99 /* ButtonNewModifare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F5C09284CAE6700446F99 /* ButtonNewModifare.swift */; };
 		55C06FD8283EA6EE00E90816 /* MyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD7283EA6EE00E90816 /* MyLoginView.swift */; };
 		55C06FDA283EAA8600E90816 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD9283EAA8600E90816 /* StartView.swift */; };
 		55C06FDC283EB13C00E90816 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FDB283EB13C00E90816 /* FriendsView.swift */; };
@@ -68,6 +69,7 @@
 		554CF824284287F800703DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		554CF8252842A1C500703DDE /* PhotoUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUserModel.swift; sourceTree = "<group>"; };
 		554CF8272842A22B00703DDE /* GalleryApiServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApiServiceManager.swift; sourceTree = "<group>"; };
+		556F5C09284CAE6700446F99 /* ButtonNewModifare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNewModifare.swift; sourceTree = "<group>"; };
 		55C06FD7283EA6EE00E90816 /* MyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoginView.swift; sourceTree = "<group>"; };
 		55C06FD9283EAA8600E90816 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		55C06FDB283EB13C00E90816 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				554CF80B28424E0F00703DDE /* ImageRadiusModifare.swift */,
 				554CF81228425A0800703DDE /* ButtonInNewBuilder.swift */,
+				556F5C09284CAE6700446F99 /* ButtonNewModifare.swift */,
 			);
 			path = ViewModifare;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				55C06FE2283EB2F100E90816 /* CellFriend.swift in Sources */,
 				55F86780283EA3E7007C5D8F /* VKSwiftUIApp.swift in Sources */,
 				554CF8262842A1C600703DDE /* PhotoUserModel.swift in Sources */,
+				556F5C0A284CAE6700446F99 /* ButtonNewModifare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
