@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
-    @State private var numberScreen: Int = 0
+    @State private var numberScreen: Int = 2
     @State private var isLoggedIn = false
 
     var body: some View {
