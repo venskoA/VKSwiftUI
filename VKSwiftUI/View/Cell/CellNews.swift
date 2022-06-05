@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CellNews: View {
-    var news: Cell
+    @State var news: Cell
 
     var body: some View {
         ZStack {
@@ -55,16 +55,22 @@ struct CellNews: View {
 
 extension CellNews {
     var likeButton: some View {
-        ButtonInNewBuilder {
-            Button {
-                print("heart")
-            } label: {
-                HStack {
-                    Image(systemName: "heart")
-                    Text("\(news.likes ?? 0)")
-                }
+        Button {
+            print("heart")
+        } label: {
+            HStack {
+                Image(systemName: news.tabLikes ? "heart.fill" : "heart")
+                    .onTapGesture {
+                        if news.tabLikes {
+                            news.tabLikes = false
+                        } else {
+                            news.tabLikes = true
+                        }
+                    }
+                Text("\(news.likes ?? 0)")
             }
         }
+        .modifier(ButtonNewModifare())
     }
 
     var messageButton: some View {

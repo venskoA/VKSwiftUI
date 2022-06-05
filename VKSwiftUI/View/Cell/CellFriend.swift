@@ -7,18 +7,24 @@
 
 import SwiftUI
 
+struct TranslationAvatar {
+    var standart: CGFloat = 0
+    var openX: CGFloat = 100
+    var openY: CGFloat = 20
+}
+
 struct CellFriend: View {
 
-    var friend: FriendItems
+    @State private var animation = false
 
     @ObservedObject var load: ProcessingLoadCellFriend
+    private var friend: FriendItems
+    private var transf = TranslationAvatar()
 
     init(_ friend: FriendItems) {
         self.friend = friend
         load = .init(friend)
     }
-    
-    let friendsService = FriendsServiceManager()
 
     var body: some View {
         ZStack {
@@ -28,6 +34,18 @@ struct CellFriend: View {
                 Image(uiImage: load.friendModel.avatar)
                     .resizable()
                     .modifier(ImageRadiusModifare())
+                    .scaleEffect(animation ? 5 : 1)
+                    .animation(.spring(), value: animation)
+                    .transformEffect(.init(translationX: animation ? transf.openX : transf.standart,
+                                           y: animation ? transf.openY : transf.standart))
+                    .onTapGesture {
+                        animation.toggle()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            withTransaction(.init(animation: Animation.easeOut)) {
+                                animation.toggle()
+                            }
+                        }
+                    }
                 
                 Spacer()
                     .frame(width: 20)
