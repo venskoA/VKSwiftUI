@@ -6,22 +6,29 @@
 //
 
 import SwiftUI
+import UIKit
+
+struct MyGroups: UIViewControllerRepresentable {
+    typealias UIViewControllerType = UINavigationController
+
+    func makeUIViewController(context: Context) -> UINavigationController {
+        let presenter = PresenterMyGroup()
+        let vcMyGroup = MyGroupViewController(presenter: presenter)
+        presenter.controller = vcMyGroup
+
+        let vc = UINavigationController(rootViewController: vcMyGroup)
+        return vc
+    }
+
+    func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+
+    }
+}
 
 struct GroupsView: View {
-    
-    let testGroups = TestCastomGroups().groups
-    
     var body: some View {
-        VStack{
-            List(testGroups) { group in
-                NavigationLink {
-                    
-                } label: {
-                    CellGroups(groups: group)
-                }
-                .navigationTitle("Groups")
-                .navigationBarTitleDisplayMode(.inline)
-            }
+        ZStack{
+            MyGroups()
         }
     }
 }

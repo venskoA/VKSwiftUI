@@ -11,21 +11,32 @@ import WebKit
 import SwiftUI
 
 struct LoginView: UIViewControllerRepresentable {
+    @ObservedObject var vc = LoginControllerWK()
+    @Binding var load: Bool 
+
     typealias UIViewControllerType = UIViewController
 
     func makeUIViewController(context: Context) -> UIViewController {
-        let vc = LoginControllerWK()
         return vc
     }
 
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        DispatchQueue.main.async {
+            load = vc.vcLoad
+        }
+    }
 }
 
-class LoginControllerWK: UIViewController {
+class LoginControllerWK: UIViewController, ObservableObject {
     var loginWebView: WKWebView = {
         let web = WKWebView()
         return web
     }()
+
+    @Published var vcLoad: Bool = false
+
+    //    @Binding var cancelView: Bool = false
+
     var session = Session.shared
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,6 +110,8 @@ extension LoginControllerWK: WKNavigationDelegate {
             print("token = ", token)
             print("userId = ", userId)
             decisionHandler(.cancel)
+            vcLoad = true
+            objectWillChange.send()
         }
     }
 }
