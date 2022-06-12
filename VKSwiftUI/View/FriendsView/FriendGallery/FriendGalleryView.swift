@@ -6,10 +6,25 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct FriendGalleryView: View {
-    var friend: FriendsModel
-//    @ObservedObject var loadGallery: ProcessingLoadGallery = .init()
+    var friend: FriendItems
+    @ObservedObject var loadGallery: PresenterFriendGallety
+
+    @ObservedObject var load: ProcessingLoadCellFriend
+
+    private var grid: [GridItem] = [.init(.adaptive(minimum: 100, maximum: 300), spacing: 10),
+                                    .init(.adaptive(minimum: 100, maximum: 300), spacing: 10),
+                                    .init(.adaptive(minimum: 100, maximum: 300), spacing: 10),
+                                    .init(.adaptive(minimum: 100, maximum: 300), spacing: 10)]
+
+    init(friend: FriendItems) {
+        self.friend = friend
+        let loadCell = ProcessingLoadCellFriend(friend)
+        self.load = loadCell
+        self.loadGallery = .init(id: String(friend.id))
+    }
 
     var body: some View {
         ZStack {
@@ -20,7 +35,7 @@ struct FriendGalleryView: View {
                 HStack {
                     Spacer()
                         .frame(width: 25)
-                    Image(uiImage: friend.avatar)
+                    Image(uiImage: load.friendModel.avatar)
                         .resizable()
                         .frame(width: 100, height: 100, alignment: .center)
                         .cornerRadius(50, antialiased: true)
@@ -33,24 +48,54 @@ struct FriendGalleryView: View {
                     Spacer()
                 }
 
-                ScrollView(.horizontal, showsIndicators: true) {
-                    HStack {
-                        ForEach(friend.fotoArray ?? ["pencil.slash"]) { foto in
-                            Image(foto)
+//                ScrollView(.vertical, showsIndicators: true) {
+                LazyVGrid(columns: grid, alignment: .center, spacing: 10, pinnedViews: .sectionFooters) {
+                        ForEach(loadGallery.imageArray) { text in
+                            iiii()
+                                .oooo(text)
                         }
                     }
-                    .padding()
-                }.animation(.easeIn(duration: 10) , value: true  )
+//                }.animation(.easeIn(duration: 10) , value: true  )
             }
         }
     }
 }
 
-//struct FriendGalleryView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FriendGalleryView(friend: TestCastomFriends().frieds[0])
-//    }
-//}
+struct iiii {
+
+    @ObservedObject var load = ImageLoader2()
+
+    @ViewBuilder func oooo(_ text: String) -> some View {
+        load.loadImage(url: text)
+        return load.image
+    }
+}
+
+class ImageLoader2: ObservableObject {
+
+    @Published var image: Image = Image(systemName: "pencil.slash")
+
+    private var session: URLSession = {
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        return session
+    }()
+
+    func loadImage(url: String) {
+        guard let newUrl = URL(string: url) else { return }
+
+        session.dataTask(with: newUrl, completionHandler: { data, response, error in
+            guard let responseData = data, error == nil, let uiImage = UIImage(data: responseData) else {
+                return
+            }
+            DispatchQueue.main.async {
+                self.image = Image(uiImage: uiImage)
+                self.objectWillChange.send()
+            }
+        }).resume()
+    }
+}
+
 
 extension String: Identifiable {
     public var id: Self {
@@ -58,56 +103,4 @@ extension String: Identifiable {
     }
 }
 
-//class ProcessingLoadGallery: ObservableObject {
-//    var service = GalleryApiServiceManager()
-//    var friendsService = FriendsServiceManager()
-//
-//    func loadDataInView() {
-//        let name = allSourseArray["name"]
-//        guard let avatarUrl = allSourseArray["avatarUrl"] else { return }
-//        friendsService.loadImage(url: avatarUrl) {[weak self] photo in
-//            guard let self = self else { return }
-//            self.avatarImage.image = photo
-//        }
-//        nameLabel.text = name
-//        idPerson = allSourseArray["id"] ?? ""
-//    }
-//
-//    func sortImage(by sizeType: PhotoSize.SizeType, from array: [PhotoItems]) -> [String] {
-//        var imageLinks: [String] = []
-//        for model in array {
-//            for size in model.sizes {
-//                if size.type == sizeType {
-//                    imageLinks.append(size.url)
-//                }
-//            }
-//        }
-//        return imageLinks
-//    }
-//
-//    func addPhotos() {
-//        service.loadPhoto(idPerson: idPerson) { [weak self] model in
-//            guard let self = self else { return }
-//            switch model {
-//            case .success(let friendPhoto):
-//                let images = self.sortImage(by: .z, from: friendPhoto)
-//                self.sourseArray = images
-//                DispatchQueue.main.async {
-//                    self.galleryCollectionView.reloadData()
-//                }
-//            case .failure(let error):
-//                print("----- \(error)")
-//            }
-//        }
-//    }
-//
-//    func transformArray(arr: [String]) {
-//        for index in arr {
-//            print(index)
-//            friendsService.loadImage(url: index) { image in
-//                self.sourseArrayImage.append(image)
-//            }
-//        }
-//        print(sourseArrayImage)
-//    }
-//}
+
