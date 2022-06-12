@@ -15,7 +15,7 @@ struct FriendsView: View {
         ZStack{
             List(loadFriend.friendsArray) { friend in
                 NavigationLink {
-//                    FriendGalleryView(friend: <#T##FriendsModel#>)
+                    FriendGalleryView(friend: friend)
                 } label: {
                     CellFriend(friend)
                 }
