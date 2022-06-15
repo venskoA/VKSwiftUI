@@ -15,7 +15,6 @@ class PresenterFriendGallety: ObservableObject {
     private var id: String
 
     private let service = GalleryApiServiceManager()
-    private var friendsService = FriendsServiceManager()
 
     init(id: String) {
         self.id = id

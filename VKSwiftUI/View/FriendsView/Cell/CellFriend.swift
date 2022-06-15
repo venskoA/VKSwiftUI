@@ -62,10 +62,3 @@ struct CellFriend: View {
         }
     }
 }
-
-//struct CellFriends_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CellFriend(friend: TestCastomFriends().frieds[0])
-//    }
-//}
-
