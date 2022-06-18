@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
-    @State private var numberScreen: Int = 1
+    @State private var numberScreen: Int = 0
     @State private var isLoggedIn = false
     @State var loadWebController: Bool = false
 

@@ -17,6 +17,4 @@ struct ImageRadiusModifare: ViewModifier {
             .cornerRadius(heigth / 2)
             .shadow(color: .mint, radius: 10, x: 3, y: 2)
     }
-
-
 }

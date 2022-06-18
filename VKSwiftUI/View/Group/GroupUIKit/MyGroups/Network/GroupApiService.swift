@@ -93,7 +93,7 @@ final class GroupApiService: Operation {
                 let result = try self.decoder.decode(GroupVK.self, from: data)
                 return comletion(.success(result.response.items))
             } catch {
-                return comletion(.failure(.parseError("parseError")))
+                return comletion(.failure(.parseError("group parseError")))
             }
         }
         task.resume()
