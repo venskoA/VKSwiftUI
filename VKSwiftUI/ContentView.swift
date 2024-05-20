@@ -4,9 +4,9 @@
 //
 //  Created by Andrey Vensko on 25.05.22.
 //
-
 import SwiftUI
 import CoreData
+
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
