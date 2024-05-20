@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5515CF6A28525F9F00E158F3 /* ProcessingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515CF6928525F9F00E158F3 /* ProcessingData.swift */; };
 		5515CF6D28525FE900E158F3 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515CF6C28525FE900E158F3 /* AsyncOperation.swift */; };
+		5515CF712852805100E158F3 /* PresenterFriendGallety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515CF702852805100E158F3 /* PresenterFriendGallety.swift */; };
 		551D9C9928415FA900BB41F6 /* TemporaryFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9828415FA900BB41F6 /* TemporaryFiles.swift */; };
 		551D9C9B284160C100BB41F6 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9A284160C100BB41F6 /* GroupsView.swift */; };
 		551D9C9D2841678800BB41F6 /* FriendGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */; };
@@ -44,6 +45,8 @@
 		556F5C24284CE0DE00446F99 /* RealmCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F5C23284CE0DE00446F99 /* RealmCacheService.swift */; };
 		556F5C26284CE10500446F99 /* MyGroupVKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F5C25284CE10500446F99 /* MyGroupVKDelegate.swift */; };
 		556F5C28284CE12000446F99 /* MyGroupVKDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F5C27284CE12000446F99 /* MyGroupVKDataSourse.swift */; };
+		55B7BBBD285A5A1A007E9FF9 /* GridCellFriendsGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7BBBC285A5A1A007E9FF9 /* GridCellFriendsGallery.swift */; };
+		55B7BBC0285A5A63007E9FF9 /* LoadImageForGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7BBBF285A5A63007E9FF9 /* LoadImageForGallery.swift */; };
 		55C06FD8283EA6EE00E90816 /* MyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD7283EA6EE00E90816 /* MyLoginView.swift */; };
 		55C06FDA283EAA8600E90816 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FD9283EAA8600E90816 /* StartView.swift */; };
 		55C06FDC283EB13C00E90816 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C06FDB283EB13C00E90816 /* FriendsView.swift */; };
@@ -67,6 +70,7 @@
 /* Begin PBXFileReference section */
 		5515CF6928525F9F00E158F3 /* ProcessingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingData.swift; sourceTree = "<group>"; };
 		5515CF6C28525FE900E158F3 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		5515CF702852805100E158F3 /* PresenterFriendGallety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterFriendGallety.swift; sourceTree = "<group>"; };
 		551D9C9828415FA900BB41F6 /* TemporaryFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFiles.swift; sourceTree = "<group>"; };
 		551D9C9A284160C100BB41F6 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendGalleryView.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		556F5C23284CE0DE00446F99 /* RealmCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCacheService.swift; sourceTree = "<group>"; };
 		556F5C25284CE10500446F99 /* MyGroupVKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupVKDelegate.swift; sourceTree = "<group>"; };
 		556F5C27284CE12000446F99 /* MyGroupVKDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupVKDataSourse.swift; sourceTree = "<group>"; };
+		55B7BBBC285A5A1A007E9FF9 /* GridCellFriendsGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellFriendsGallery.swift; sourceTree = "<group>"; };
+		55B7BBBF285A5A63007E9FF9 /* LoadImageForGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageForGallery.swift; sourceTree = "<group>"; };
 		55C06FD7283EA6EE00E90816 /* MyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoginView.swift; sourceTree = "<group>"; };
 		55C06FD9283EAA8600E90816 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		55C06FDB283EB13C00E90816 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
@@ -157,6 +163,16 @@
 			path = MyGroups;
 			sourceTree = "<group>";
 		};
+		5515CF6F2852800F00E158F3 /* FriendGallery */ = {
+			isa = PBXGroup;
+			children = (
+				55B7BBBB285A59DB007E9FF9 /* Cell */,
+				55B7BBBE285A5A39007E9FF9 /* Network */,
+				551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */,
+			);
+			path = FriendGallery;
+			sourceTree = "<group>";
+		};
 		552EE40B28510AFF007C9D15 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +220,6 @@
 			children = (
 				554CF8202842743000703DDE /* FriendsSericeManager.swift */,
 				554CF81E2842738400703DDE /* FriendsApiService.swift */,
-				554CF8272842A22B00703DDE /* GalleryApiServiceManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -249,7 +264,7 @@
 				552EE41228511B17007C9D15 /* Network */,
 				552EE41028511AC7007C9D15 /* Cell */,
 				55C06FDB283EB13C00E90816 /* FriendsView.swift */,
-				551D9C9C2841678800BB41F6 /* FriendGalleryView.swift */,
+				5515CF6F2852800F00E158F3 /* FriendGallery */,
 			);
 			path = FriendsView;
 			sourceTree = "<group>";
@@ -257,8 +272,8 @@
 		554CF80028423AB200703DDE /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				551D9C9A284160C100BB41F6 /* GroupsView.swift */,
 				556F5C1A284CE02400446F99 /* GroupUIKit */,
+				551D9C9A284160C100BB41F6 /* GroupsView.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -317,6 +332,24 @@
 				55C06FD9283EAA8600E90816 /* StartView.swift */,
 			);
 			path = StartView;
+			sourceTree = "<group>";
+		};
+		55B7BBBB285A59DB007E9FF9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55B7BBBC285A5A1A007E9FF9 /* GridCellFriendsGallery.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		55B7BBBE285A5A39007E9FF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				55B7BBBF285A5A63007E9FF9 /* LoadImageForGallery.swift */,
+				554CF8272842A22B00703DDE /* GalleryApiServiceManager.swift */,
+				5515CF702852805100E158F3 /* PresenterFriendGallety.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		55C06FD6283EA6D800E90816 /* View */ = {
@@ -566,12 +599,15 @@
 				554CF80428423BD000703DDE /* Session.swift in Sources */,
 				5534B92D2843712700FB0A58 /* ProcessingLoadCellFriend.swift in Sources */,
 				551D9C9928415FA900BB41F6 /* TemporaryFiles.swift in Sources */,
+				5515CF712852805100E158F3 /* PresenterFriendGallety.swift in Sources */,
+				55B7BBC0285A5A63007E9FF9 /* LoadImageForGallery.swift in Sources */,
 				55C06FE2283EB2F100E90816 /* CellFriend.swift in Sources */,
 				55F86780283EA3E7007C5D8F /* VKSwiftUIApp.swift in Sources */,
 				554CF8262842A1C600703DDE /* PhotoUserModel.swift in Sources */,
 				556F5C0A284CAE6700446F99 /* ButtonNewModifare.swift in Sources */,
 				5515CF6A28525F9F00E158F3 /* ProcessingData.swift in Sources */,
 				55DAD7DA2852024200BF7D3A /* PresenterSearchGroup.swift in Sources */,
+				55B7BBBD285A5A1A007E9FF9 /* GridCellFriendsGallery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
